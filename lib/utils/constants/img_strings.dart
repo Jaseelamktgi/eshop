@@ -1,7 +1,7 @@
 class ImgStrings {
   // App logo
-  static String darkAppLogo = 'assets/logos/.png';
-  static String lightAppLogo = 'assets/logos/splash.png';
+  static String darkAppLogo = 'assets/logos/e.png';
+  static String lightAppLogo = 'assets/logos/e.png';
 
   // Social Logos
   static String facebook = 'assets/logos/fb.png';

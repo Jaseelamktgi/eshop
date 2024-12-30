@@ -9,6 +9,10 @@ class TextStrings {
   static const String  onBoardingSubTitle2 ='For Seamless Transactions, Choose your Payment Method - Yor Convenience, Our Priority';
   static const String  onBoardingSubTitle3 ='From Our Doorstep to Yours - Swift, Secure, and Convenient Delivery';
 
+  // Login
+  static const String loginTitle = 'Welcome Back!';
+  static const String loginSubTitle = 'Discover Limitless Choices  and Unmatched Convenience'; 
+
   // Home
   static const String homeAppBarTitle = 'Good day for Shopping';
   static const String homeAppBarSubTitle = 'Taimoor Sikandar';

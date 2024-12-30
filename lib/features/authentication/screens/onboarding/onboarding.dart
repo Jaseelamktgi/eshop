@@ -1,8 +1,8 @@
 import 'package:eshop/features/authentication/controllers/onboarding.dart';
-import 'package:eshop/features/authentication/screens/widgets/circular_btn.dart';
-import 'package:eshop/features/authentication/screens/widgets/onBoarding_pages.dart';
-import 'package:eshop/features/authentication/screens/widgets/skip_btn.dart';
-import 'package:eshop/features/authentication/screens/widgets/smooth_indicator.dart';
+import 'package:eshop/features/authentication/screens/onboarding/widgets/circular_btn.dart';
+import 'package:eshop/features/authentication/screens/onboarding/widgets/onBoarding_pages.dart';
+import 'package:eshop/features/authentication/screens/onboarding/widgets/skip_btn.dart';
+import 'package:eshop/features/authentication/screens/onboarding/widgets/smooth_indicator.dart';
 import 'package:eshop/utils/constants/img_strings.dart';
 import 'package:eshop/utils/constants/text_strings.dart';
 import 'package:flutter/material.dart';

@@ -23,7 +23,9 @@ class OnBoardingCircularBtn extends StatelessWidget {
               shape: const CircleBorder(),
               backgroundColor: dark ? AppColors.primary : AppColors.black,
             ),
-            onPressed: () => OnboardingController.instace.nextPage(),
+            onPressed: () {
+              OnboardingController.instace.nextPage();
+            },
             child: Icon(Iconsax.arrow_right_2)));
   }
 }
