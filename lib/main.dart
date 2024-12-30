@@ -1,5 +1,7 @@
+import 'package:eshop/features/authentication/screens/onboarding.dart';
 import 'package:eshop/utils/theme/theme.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 //-------- Entry point of the app ---------
 void main() {
@@ -18,11 +20,12 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  MaterialApp(
+    return  GetMaterialApp(
       debugShowCheckedModeBanner: false,
       themeMode: ThemeMode.system,
       theme: AppThemes.lightTheme,
       darkTheme: AppThemes.darkTheme, 
+      home: const OnBoardingScreen(),
     );
   }
 }
