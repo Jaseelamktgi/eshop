@@ -15,6 +15,7 @@ class ImgStrings {
   // Auth Images
   static String loginSuccess = 'assets/images/success.gif';
   static String verifyEmail = 'assets/images/verify-email.gif';
+  static String resetPassword = 'assets/images/reset.gif';
 
   
 }

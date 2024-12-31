@@ -1,4 +1,5 @@
 
+import 'package:eshop/features/authentication/screens/signup/forget_password.dart';
 import 'package:eshop/features/authentication/screens/signup/signup.dart';
 import 'package:eshop/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
@@ -44,7 +45,7 @@ class LoginForm extends StatelessWidget {
             Checkbox(value: true, onChanged: (value) {}),
             Text('Remember Me'),
             Spacer(),
-            TextButton(onPressed: () {}, child: Text('Forget Password?')),
+            TextButton(onPressed: () => Get.to(() => const ForgetPassword()), child: Text('Forget Password?')),
           ]),
 
           SizedBox(
