@@ -1,7 +1,7 @@
-
+import 'package:eshop/features/authentication/screens/signup/verify_email.dart';
 import 'package:eshop/utils/constants/sizes.dart';
-import 'package:eshop/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax_flutter/iconsax_flutter.dart';
 
 class SignupForm extends StatelessWidget {
@@ -11,8 +11,6 @@ class SignupForm extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final dark = AppHelperFunctions.isDarkMode(context);
-
     return Form(
         child: Column(children: [
       // First & last name
@@ -119,7 +117,7 @@ class SignupForm extends StatelessWidget {
       // Signup Button
       SizedBox(
           width: double.infinity,
-          child: ElevatedButton(onPressed: () {}, child: Text('Sign Up'))),
+          child: ElevatedButton(onPressed: () => Get.to(() => const VerifyEmailScreen()), child: Text('Create Account'))),
       SizedBox(height: AppSizes.spaceBtwSections),
     ]));
   }

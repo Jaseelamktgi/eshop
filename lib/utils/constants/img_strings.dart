@@ -11,4 +11,10 @@ class ImgStrings {
   static String onboarding1 = 'assets/images/announce.gif';
   static String onboarding2 = 'assets/images/doorstep.gif';
   static String onboarding3 = 'assets/images/delivery.gif';
+
+  // Auth Images
+  static String loginSuccess = 'assets/images/success.gif';
+  static String verifyEmail = 'assets/images/verify-email.gif';
+
+  
 }
