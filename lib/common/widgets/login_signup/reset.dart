@@ -3,10 +3,10 @@ import 'package:eshop/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 
 class Reset extends StatelessWidget {
-  final String img, title, email, subtitle,elavatedBtnText, outlinedText;
+  final String img, title, email, subtitle, elavatedBtnText, outlinedText;
   VoidCallback elevatedOnpressed, outlineOnPressed;
 
-   Reset({
+  Reset({
     super.key,
     required this.img,
     required this.title,
@@ -15,7 +15,7 @@ class Reset extends StatelessWidget {
     required this.elavatedBtnText,
     required this.elevatedOnpressed,
     required this.outlinedText,
-    required this.outlineOnPressed,
+    required this.outlineOnPressed,P
   });
 
   @override
@@ -68,8 +68,7 @@ class Reset extends StatelessWidget {
         SizedBox(
             width: double.infinity,
             child: OutlinedButton(
-                onPressed: outlineOnPressed,
-                child: Text(outlinedText))),
+                onPressed: outlineOnPressed, child: Text(outlinedText))),
       ],
     );
   }
