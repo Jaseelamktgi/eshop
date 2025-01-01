@@ -17,5 +17,17 @@ class ImgStrings {
   static String verifyEmail = 'assets/images/verify-email.gif';
   static String resetPassword = 'assets/images/reset.gif';
 
+  // Category Images
+  static String sportIocon = 'assets/icons/icons8-bowling-50.png';
+  static String clothIcon = 'assets/icons/icons8-tailors-dummy-48.png';
+  static String cosmeticIcon = 'assets/icons/icons8-cosmetics-100.png';
+  static String shoeIcon  = 'assets/icons/icons8-shoes-64.png';
+  static String animalsIcon = 'assets/icons/icons8-heart-with-dog-paw-64.png';
+  static String toyIcon = 'assets/icons/icons8-toy-train-100.png';
+  static String furnitureIcon = 'assets/icons/icons8-armchair-100.png';
+  static String jewelleryIcon = 'assets/icons/icons8-diamond-48.png';
+  static String electronicsIcon = 'assets/icons/icons8-smartphone-100.png';
+  
+
   
 }
