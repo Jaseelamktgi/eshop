@@ -28,6 +28,10 @@ class ImgStrings {
   static String jewelleryIcon = 'assets/icons/icons8-diamond-48.png';
   static String electronicsIcon = 'assets/icons/icons8-smartphone-100.png';
   
-
-  
+  // Banner Images
+  static String banner1 = 'assets/images/banner1.jpg';
+  static String banner2 = 'assets/images/banner2.jpg';
+  static String banner3 = 'assets/images/banner3.jpg';
+  static String banner4 = 'assets/images/banner4.jpg';
+ 
 }

@@ -1,3 +1,4 @@
+import 'package:eshop/features/shop/screens/home/widgets/promo_slider.dart';
 import 'package:eshop/utils/constants/img_strings.dart';
 import 'package:eshop/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
@@ -29,6 +30,7 @@ class HomeScreen extends StatelessWidget {
                 ),
                 SizedBox(height: AppSizes.spaceBtwSections),
 
+                // Categories Section
                 Padding(
                   padding: const EdgeInsets.only(left: AppSizes.defaultSpace),
                   child: Column(
@@ -47,16 +49,25 @@ class HomeScreen extends StatelessWidget {
                           shrinkWrap: true,
                           scrollDirection: Axis.horizontal,
                           itemBuilder: (_, index) => VerticalImgText(
-                              img: ImgStrings.shoeIcon,
-                              categoryTxt: 'Animals'),
+                              img: ImgStrings.shoeIcon, categoryTxt: 'Animals'),
                           itemCount: 9,
                         ),
                       )
                     ],
                   ),
-                )
+                ),
               ],
-            ))
+            )),
+
+            // Image Banner
+            Padding(
+              padding: const EdgeInsets.all(AppSizes.defaultSpace),
+              child: PromoSlider(bannerImg: [
+                ImgStrings.banner1,
+                ImgStrings.banner3,
+                ImgStrings.banner4,
+              ]),
+            ),
           ],
         ),
       ),
