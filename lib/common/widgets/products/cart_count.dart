@@ -7,10 +7,11 @@ class CartCounterIcon extends StatelessWidget {
   const CartCounterIcon({
     super.key,
     this.iconColor,
+    this.badgeColor,
     this.onPressed ,
   });
 
-  final Color? iconColor;
+  final Color? iconColor, badgeColor;
   final VoidCallback? onPressed;
 
   @override
@@ -30,7 +31,7 @@ class CartCounterIcon extends StatelessWidget {
             height: 18,
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(100),
-                color: AppColors.dark.withValues(alpha: 0.5)),
+                color:badgeColor ),
             child: Center(
                 child: Text('2',
                     style: Theme.of(context).textTheme.labelSmall!.apply(

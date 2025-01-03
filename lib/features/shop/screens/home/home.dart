@@ -51,7 +51,8 @@ class HomeScreen extends StatelessWidget {
                           shrinkWrap: true,
                           scrollDirection: Axis.horizontal,
                           itemBuilder: (_, index) => VerticalImgText(
-                              img: ImgStrings.shoeIcon, categoryTxt: 'Animals'),
+                              img: ImgStrings.cosmeticIcon,
+                              categoryTxt: 'Cosemetics'),
                           itemCount: 9,
                         ),
                       )
@@ -77,12 +78,14 @@ class HomeScreen extends StatelessWidget {
 
                   // Popular Products
                   SectionHeading(
-                      titleTxt: 'Popular Products', onPressed: () {
-                        
-                      },),
+                    titleTxt: 'Popular Products',
+                    onPressed: () {},
+                  ),
                   SizedBox(height: AppSizes.spaceBtwItems),
 
-                  GridLayout(itemCount: 10, itemBuilder: (_, index) => Verticalproductcard()),
+                  GridLayout(
+                      itemCount: 10,
+                      itemBuilder: (_, index) => Verticalproductcard()),
                 ],
               ),
             ),

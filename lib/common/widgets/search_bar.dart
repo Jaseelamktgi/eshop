@@ -12,12 +12,15 @@ class CustomSearchBar extends StatelessWidget {
       this.icon = Iconsax.search_normal_1_copy,
       this.showBackground = true,
       this.showBorder = false,
+      this.padding =
+          const EdgeInsets.symmetric(horizontal: AppSizes.defaultSpace),
       this.onTap});
 
   final String text;
   final IconData icon;
   final bool showBackground, showBorder;
   final VoidCallback? onTap;
+  final EdgeInsetsGeometry padding;
 
   @override
   Widget build(BuildContext context) {
@@ -25,7 +28,7 @@ class CustomSearchBar extends StatelessWidget {
     return GestureDetector(
       onTap: onTap,
       child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: AppSizes.defaultSpace),
+        padding: padding,
         child: Container(
           width: DeviceUtility.getScreenWidth(context),
           padding: const EdgeInsets.all(AppSizes.md),

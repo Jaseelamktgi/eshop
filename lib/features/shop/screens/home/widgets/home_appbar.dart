@@ -1,4 +1,3 @@
-
 import 'package:eshop/utils/constants/colors.dart';
 import 'package:flutter/material.dart';
 
@@ -33,7 +32,11 @@ class HomeAppBar extends StatelessWidget {
         ],
       ),
       actions: [
-        CartCounterIcon(onPressed: (){},iconColor: AppColors.textWhite,),
+        CartCounterIcon(
+          onPressed: () {},
+          iconColor: AppColors.textWhite,
+          badgeColor: AppColors.dark.withValues(alpha: 0.5),
+        ),
       ],
     );
   }

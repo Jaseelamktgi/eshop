@@ -1,4 +1,5 @@
 import 'package:eshop/features/shop/screens/home/home.dart';
+import 'package:eshop/features/shop/screens/store/store.dart';
 import 'package:eshop/utils/constants/colors.dart';
 import 'package:eshop/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
@@ -54,7 +55,7 @@ class BottomNavController extends GetxController {
 
   final screens = [
     const Center(child: HomeScreen()),
-    const Center(child: Text('Store')),
+    const Center(child: StoreScreen()),
     const Center(child: Text('Wishlist')),
     const Center(child: Text('Profile')),
   ];

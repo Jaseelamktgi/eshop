@@ -8,22 +8,27 @@ class CustomAppbar extends StatelessWidget implements PreferredSizeWidget {
   const CustomAppbar(
       {super.key,
       this.title,
+      this.backgroundColor,
       this.showBackArrow = false,
       this.actions,
       this.leadingIcon,
+      this.padding = const EdgeInsets.symmetric(horizontal: AppSizes.md),
       this.leadingOnPressed});
 
   final Widget? title;
+  final Color? backgroundColor;
   final bool showBackArrow;
   final List<Widget>? actions;
   final IconData? leadingIcon;
   final VoidCallback? leadingOnPressed;
+  final EdgeInsetsGeometry padding;
 
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.symmetric(horizontal: AppSizes.md),
+      padding: padding,
       child: AppBar(
+        backgroundColor: backgroundColor,
         automaticallyImplyLeading: false,
         leading: showBackArrow
             ? IconButton(

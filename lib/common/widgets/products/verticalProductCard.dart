@@ -58,9 +58,11 @@ class Verticalproductcard extends StatelessWidget {
 
                 // Like btn
                 Positioned(
-                  top: 5,
-                  right: 5,
+                  top: 0,
+                  right: 0,
                   child: RoundedIcon(
+                    width: 40,
+                    height: 40,
                     size: AppSizes.iconMd,
                     icon: Iconsax.heart,
                     color: Colors.red,
@@ -108,43 +110,41 @@ class Verticalproductcard extends StatelessWidget {
                         ],
                       ),
                     ])),
-                    Spacer(),
-                    Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          // Price
-                          Padding(
-                            padding: const EdgeInsets.only(left: AppSizes.sm),
-                            child: Text(
-                              '\$120',
-                              style: Theme.of(context).textTheme.headlineMedium,
-                              overflow: TextOverflow.ellipsis,
-                              maxLines: 1,
-                            ),
-                          ),
+            Spacer(),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                // Price
+                Padding(
+                  padding: const EdgeInsets.only(left: AppSizes.sm),
+                  child: Text(
+                    '\$120',
+                    style: Theme.of(context).textTheme.headlineMedium,
+                    overflow: TextOverflow.ellipsis,
+                    maxLines: 1,
+                  ),
+                ),
 
-                          // Add btn
-                          Container(
-                            decoration: BoxDecoration(
-                                color:darkMode? AppColors.dark :AppColors.light,
-                                borderRadius: BorderRadius.only(
-                                    topLeft:
-                                        Radius.circular(AppSizes.cardRadiusMd),
-                                    bottomRight: Radius.circular(
-                                        AppSizes.productImgRadius))),
-                            child: SizedBox(
-                              
-                              width: AppSizes.iconLg * 1.2,
-                              height: AppSizes.iconLg * 1.2,
-                              child: Center(
-                                  child: Icon(
-                                Iconsax.add_circle,
-                                color: AppColors.textWhite,
-                              )),
-                            ),
-                          )
-                        ],
-                      ),
+                // Add btn
+                Container(
+                  decoration: BoxDecoration(
+                      color: darkMode ? AppColors.dark : AppColors.light,
+                      borderRadius: BorderRadius.only(
+                          topLeft: Radius.circular(AppSizes.cardRadiusMd),
+                          bottomRight:
+                              Radius.circular(AppSizes.productImgRadius))),
+                  child: SizedBox(
+                    width: AppSizes.iconLg * 1.2,
+                    height: AppSizes.iconLg * 1.2,
+                    child: Center(
+                        child: Icon(
+                      Iconsax.add_circle,
+                      color: AppColors.textWhite,
+                    )),
+                  ),
+                )
+              ],
+            ),
           ],
         ),
       ),

@@ -23,7 +23,7 @@ class AppThemes {
     elevatedButtonTheme: AppElevatedBtnTheme.lightElevatedBtnTheme,
     outlinedButtonTheme: AppOutlinedBtnTheme.lightOutlinedBtnTheme,
     bottomSheetTheme: AppBottomSheetTheme.lightBottomSheetTheme,
-    inputDecorationTheme: AppTextFieldTheme.lightInputDecorationTheme,       
+    inputDecorationTheme: AppTextFieldTheme.lightInputDecorationTheme,
   );
 
   // Dark Theme
@@ -40,6 +40,6 @@ class AppThemes {
     elevatedButtonTheme: AppElevatedBtnTheme.darkElevatedBtnTheme,
     outlinedButtonTheme: AppOutlinedBtnTheme.darkOutlinedBtnTheme,
     bottomSheetTheme: AppBottomSheetTheme.darkBottomSheetTheme,
-    inputDecorationTheme: AppTextFieldTheme.darkInputDecorationTheme,  
+    inputDecorationTheme: AppTextFieldTheme.darkInputDecorationTheme,
   );
 }

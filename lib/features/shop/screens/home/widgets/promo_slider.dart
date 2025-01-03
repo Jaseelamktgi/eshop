@@ -15,7 +15,7 @@ class PromoSlider extends StatelessWidget {
     required this.bannerImg,
   });
 
-  final List<String> bannerImg ;
+  final List<String> bannerImg;
 
   @override
   Widget build(BuildContext context) {
@@ -28,7 +28,11 @@ class PromoSlider extends StatelessWidget {
               onPageChanged: (index, reason) =>
                   controller.updatePageIndicator(index),
             ),
-            items:bannerImg.map((img) => RoundedImg(imgUrl: img,)).toList()),
+            items: bannerImg
+                .map((img) => RoundedImg(
+                      imgUrl: img,
+                    ))
+                .toList()),
         SizedBox(height: AppSizes.spaceBtwItems),
         Center(
           child: Obx(
@@ -41,7 +45,7 @@ class PromoSlider extends StatelessWidget {
                     width: 20,
                     backgroundColor: controller.carouselCurrentIndex.value == i
                         ? AppColors.primary
-                        : AppColors.grey.withValues(alpha: 0.1),
+                        : AppColors.grey,
                     margin: EdgeInsets.only(right: 10),
                   )
               ],
