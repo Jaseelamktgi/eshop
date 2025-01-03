@@ -22,6 +22,7 @@ class SectionHeading extends StatelessWidget {
     final dark = AppHelperFunctions.isDarkMode(context);
 
     return Row(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         Text(
           titleTxt,

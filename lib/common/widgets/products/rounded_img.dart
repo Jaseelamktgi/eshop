@@ -1,7 +1,6 @@
 
 import 'package:flutter/material.dart';
 
-import '../../../utils/constants/colors.dart';
 import '../../../utils/constants/sizes.dart';
 
 class RoundedImg extends StatelessWidget {
@@ -13,7 +12,7 @@ class RoundedImg extends StatelessWidget {
     this.fit = BoxFit.contain,
     this.applyImageRadius = true,
     this.border,
-    this.backgroundColor = AppColors.textWhite,
+    this.backgroundColor,
     this.padding,
     this.isNetworkImage = false,
     this.onTap,

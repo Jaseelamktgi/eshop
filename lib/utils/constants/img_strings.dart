@@ -33,5 +33,14 @@ class ImgStrings {
   static String banner2 = 'assets/images/banner2.jpg';
   static String banner3 = 'assets/images/banner3.jpg';
   static String banner4 = 'assets/images/banner4.jpg';
+
+  // Product Images
+  static String product1 = 'assets/images/shoe.jpg';
+  static String product2 = 'assets/images/shirt.png';
+  static String product3 = 'assets/images/jacket.jpg';
+  static String product4 = 'assets/images/baniyan.jpg';
+  static String product5 = 'assets/images/product5.jpg';
+  static String product6 = 'assets/images/product6.jpg';
+  static String product7 = 'assets/images/product7.jpg';
  
 }

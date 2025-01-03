@@ -1,3 +1,5 @@
+import 'package:eshop/common/widgets/products/grid_layout.dart';
+import 'package:eshop/common/widgets/products/verticalProductCard.dart';
 import 'package:eshop/features/shop/screens/home/widgets/promo_slider.dart';
 import 'package:eshop/utils/constants/img_strings.dart';
 import 'package:eshop/utils/constants/sizes.dart';
@@ -59,14 +61,30 @@ class HomeScreen extends StatelessWidget {
               ],
             )),
 
-            // Image Banner
+            // Promo Slider
             Padding(
               padding: const EdgeInsets.all(AppSizes.defaultSpace),
-              child: PromoSlider(bannerImg: [
-                ImgStrings.banner1,
-                ImgStrings.banner3,
-                ImgStrings.banner4,
-              ]),
+              child: Column(
+                children: [
+                  PromoSlider(bannerImg: [
+                    ImgStrings.banner1,
+                    ImgStrings.banner3,
+                    ImgStrings.banner4,
+                  ]),
+                  SizedBox(
+                    height: AppSizes.spaceBtwSections,
+                  ),
+
+                  // Popular Products
+                  SectionHeading(
+                      titleTxt: 'Popular Products', onPressed: () {
+                        
+                      },),
+                  SizedBox(height: AppSizes.spaceBtwItems),
+
+                  GridLayout(itemCount: 10, itemBuilder: (_, index) => Verticalproductcard()),
+                ],
+              ),
             ),
           ],
         ),
