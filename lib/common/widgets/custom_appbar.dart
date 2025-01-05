@@ -2,7 +2,6 @@ import 'package:eshop/utils/constants/sizes.dart';
 import 'package:eshop/utils/device/device_utlity.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:iconsax_flutter/iconsax_flutter.dart';
 
 class CustomAppbar extends StatelessWidget implements PreferredSizeWidget {
   const CustomAppbar(
