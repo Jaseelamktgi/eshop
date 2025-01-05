@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 import '../../../utils/constants/sizes.dart';
@@ -6,8 +5,8 @@ import '../../../utils/constants/sizes.dart';
 class RoundedImg extends StatelessWidget {
   const RoundedImg({
     super.key,
-    this.width ,
-    this.height ,
+    this.width,
+    this.height,
     required this.imgUrl,
     this.fit = BoxFit.contain,
     this.applyImageRadius = true,

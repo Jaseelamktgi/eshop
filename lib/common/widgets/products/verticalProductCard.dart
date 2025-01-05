@@ -1,9 +1,11 @@
 import 'package:eshop/common/styles/shadows.dart';
 import 'package:eshop/common/widgets/custom_shapes/circular_container.dart';
 import 'package:eshop/common/widgets/products/rounded_img.dart';
+import 'package:eshop/features/shop/screens/product_details/product_details.dart';
 import 'package:eshop/utils/constants/img_strings.dart';
 import 'package:eshop/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax_flutter/iconsax_flutter.dart';
 import '../../../utils/constants/colors.dart';
 import '../../../utils/helpers/helper_functions.dart';
@@ -17,7 +19,7 @@ class Verticalproductcard extends StatelessWidget {
     final darkMode = AppHelperFunctions.isDarkMode(context);
 
     return GestureDetector(
-      onTap: () {},
+      onTap: () => Get.to(()=> ProductDetailsScreen()),
       child: Container(
         width: 180,
         padding: EdgeInsets.all(1),

@@ -3,8 +3,10 @@ import 'package:eshop/common/widgets/section_heading.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax_flutter/iconsax_flutter.dart';
 
+import '../../../../utils/constants/colors.dart';
 import '../../../../utils/constants/img_strings.dart';
 import '../../../../utils/constants/sizes.dart';
+import '../../../../utils/helpers/helper_functions.dart';
 import '../widgets/profile_menu.dart';
 
 class ProfileScreen extends StatelessWidget {
@@ -12,8 +14,12 @@ class ProfileScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final dark = AppHelperFunctions.isDarkMode(context);
     return Scaffold(
       appBar: AppBar(
+        centerTitle: false,
+        iconTheme:
+            IconThemeData(color: dark ? AppColors.light : AppColors.dark),
         title:
             Text('Profile', style: Theme.of(context).textTheme.headlineMedium),
       ),

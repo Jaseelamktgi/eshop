@@ -28,7 +28,12 @@ dependencies:
   # state managemnet
   get: ^4.6.6
   get_storage: ^2.1.1
+
+  # products specific packages  
   carousel_slider: ^5.0.0
+  readmore: ^3.0.0
+  # flutter_rating_bar: ^4.0.1
+
 
 
 dev_dependencies:
