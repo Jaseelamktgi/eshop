@@ -1,3 +1,4 @@
+import 'package:eshop/features/personalization/screens/settings/settings.dart';
 import 'package:eshop/features/shop/screens/home/home.dart';
 import 'package:eshop/features/shop/screens/store/store.dart';
 import 'package:eshop/features/shop/screens/wishlist/wishlist.dart';
@@ -58,6 +59,6 @@ class BottomNavController extends GetxController {
     const Center(child: HomeScreen()),
     const Center(child: StoreScreen()),
     const Center(child: WishlistScreen()),
-    const Center(child: Text('Profile')),
+    const Center(child: SettingsScreen()),
   ];
 }

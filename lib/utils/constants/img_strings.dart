@@ -21,13 +21,13 @@ class ImgStrings {
   static String sportIocon = 'assets/icons/icons8-bowling-50.png';
   static String clothIcon = 'assets/icons/icons8-tailors-dummy-48.png';
   static String cosmeticIcon = 'assets/icons/icons8-cosmetics-100.png';
-  static String shoeIcon  = 'assets/icons/icons8-shoes-64.png';
+  static String shoeIcon = 'assets/icons/icons8-shoes-64.png';
   static String animalsIcon = 'assets/icons/icons8-heart-with-dog-paw-64.png';
   static String toyIcon = 'assets/icons/icons8-toy-train-100.png';
   static String furnitureIcon = 'assets/icons/icons8-armchair-100.png';
   static String jewelleryIcon = 'assets/icons/icons8-diamond-48.png';
   static String electronicsIcon = 'assets/icons/icons8-smartphone-100.png';
-  
+
   // Banner Images
   static String banner1 = 'assets/images/banner1.jpg';
   static String banner2 = 'assets/images/banner2.jpg';
@@ -42,5 +42,7 @@ class ImgStrings {
   static String product5 = 'assets/images/product5.jpg';
   static String product6 = 'assets/images/product6.jpg';
   static String product7 = 'assets/images/product7.jpg';
- 
+
+  // User Images
+  static String user = 'assets/images/avatar.png';
 }
