@@ -3,8 +3,10 @@ import 'package:eshop/common/widgets/products/product_attributes.dart';
 import 'package:eshop/common/widgets/products/product_meta_data.dart';
 import 'package:eshop/common/widgets/products/rating_share.dart';
 import 'package:eshop/common/widgets/section_heading.dart';
+import 'package:eshop/features/shop/screens/product_reviews/product_reviews.dart';
 import 'package:eshop/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:readmore/readmore.dart';
 
 import '../../../../common/widgets/products/product_img_slider.dart';
@@ -68,7 +70,11 @@ class ProductDetailsScreen extends StatelessWidget {
                   // Reviews
                   const Divider(),
                   SizedBox(height: AppSizes.spaceBtwItems),
-                  SectionHeading(titleTxt: 'Reviews (105)'),
+                  SectionHeading(
+                    titleTxt: 'Reviews (105)',
+                    showActionBtn: true,
+                    onPressed: () => Get.to(() => const ProductReviewsScreen()),
+                  ),
 
                   SizedBox(height: AppSizes.spaceBtwSections),
                 ],
