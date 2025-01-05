@@ -6,14 +6,10 @@ import 'package:eshop/common/widgets/products/tab_category.dart';
 import 'package:eshop/common/widgets/search_bar.dart';
 import 'package:eshop/common/widgets/section_heading.dart';
 import 'package:eshop/utils/constants/colors.dart';
-import 'package:eshop/utils/constants/img_strings.dart';
 import 'package:eshop/utils/constants/sizes.dart';
 import 'package:eshop/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
-
 import '../../../../common/widgets/products/featured_brands_container.dart';
-import '../../../../common/widgets/products/top_brands_card.dart';
-
 class StoreScreen extends StatelessWidget {
   const StoreScreen({super.key});
 

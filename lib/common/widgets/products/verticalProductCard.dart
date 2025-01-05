@@ -83,7 +83,7 @@ class Verticalproductcard extends StatelessWidget {
                     children: [
                       Text(
                         'Nike Shoes',
-                        style: Theme.of(context).textTheme.labelMedium,
+                        style: Theme.of(context).textTheme.bodyMedium,
                         overflow: TextOverflow.ellipsis,
                         maxLines: 2,
                         textAlign: TextAlign.left,
