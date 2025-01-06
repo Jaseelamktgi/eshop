@@ -6,7 +6,6 @@ import 'package:get/get.dart';
 import '../../../../../common/widgets/custom_shapes/circular_container.dart';
 import '../../../../../common/widgets/products/rounded_img.dart';
 import '../../../../../utils/constants/colors.dart';
-import '../../../../../utils/constants/img_strings.dart';
 import '../../../../../utils/constants/sizes.dart';
 
 class PromoSlider extends StatelessWidget {

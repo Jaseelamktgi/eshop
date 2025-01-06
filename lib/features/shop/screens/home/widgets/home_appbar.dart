@@ -1,5 +1,7 @@
+import 'package:eshop/features/shop/screens/cart/cart.dart';
 import 'package:eshop/utils/constants/colors.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 import '../../../../../common/widgets/custom_appbar.dart';
 import '../../../../../common/widgets/products/cart_count.dart';
@@ -33,7 +35,7 @@ class HomeAppBar extends StatelessWidget {
       ),
       actions: [
         CartCounterIcon(
-          onPressed: () {},
+          onPressed: () => Get.to(() => const CartScreen()),
           iconColor: AppColors.textWhite,
           badgeColor: AppColors.dark.withValues(alpha: 0.5),
         ),
