@@ -19,14 +19,14 @@ class Verticalproductcard extends StatelessWidget {
     final darkMode = AppHelperFunctions.isDarkMode(context);
 
     return GestureDetector(
-      onTap: () => Get.to(()=> ProductDetailsScreen()),
+      onTap: () => Get.to(() => ProductDetailsScreen()),
       child: Container(
         width: 180,
         padding: EdgeInsets.all(1),
         decoration: BoxDecoration(
           boxShadow: [AppShadowStyles.verticalProductShadow],
           borderRadius: BorderRadius.circular(AppSizes.productImgRadius),
-          color: darkMode ? AppColors.darkerGrey : AppColors.textWhite,
+          color: darkMode ? AppColors.dark : AppColors.light,
         ),
         child: Column(
           children: [

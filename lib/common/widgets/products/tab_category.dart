@@ -1,6 +1,6 @@
 import 'package:eshop/common/widgets/products/grid_layout.dart';
 import 'package:eshop/common/widgets/products/top_brands_card.dart';
-import 'package:eshop/common/widgets/products/verticalProductCard.dart';
+import 'package:eshop/common/widgets/products/vertical_product_card.dart';
 import 'package:eshop/common/widgets/section_heading.dart';
 import 'package:flutter/material.dart';
 

@@ -1,7 +1,7 @@
 import 'package:eshop/common/widgets/custom_appbar.dart';
 import 'package:eshop/common/widgets/icons/rounded_icon.dart';
 import 'package:eshop/common/widgets/products/grid_layout.dart';
-import 'package:eshop/common/widgets/products/verticalProductCard.dart';
+import 'package:eshop/common/widgets/products/vertical_product_card.dart';
 import 'package:eshop/features/shop/screens/home/home.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax_flutter/iconsax_flutter.dart';

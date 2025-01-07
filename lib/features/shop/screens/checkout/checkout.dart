@@ -1,8 +1,13 @@
 import 'package:eshop/features/shop/screens/cart/widgets/cart_item.dart';
+import 'package:eshop/features/shop/screens/checkout/widgets/billing_payment.dart';
+import 'package:eshop/features/shop/screens/checkout/widgets/billing_amount_section.dart';
+import 'package:eshop/features/shop/screens/checkout/widgets/payment_success.dart';
 import 'package:eshop/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 import '../../../../common/widgets/custom_appbar.dart';
+import '../../../../common/widgets/custom_shapes/circular_container.dart';
 import '../../../../utils/constants/colors.dart';
 import '../../../../utils/helpers/helper_functions.dart';
 
@@ -11,9 +16,10 @@ class CheckoutScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final darkMode = AppHelperFunctions.isDarkMode(context);
     return Scaffold(
       appBar: CustomAppbar(
-        title: Text('Checkout'),
+        title: Text('Order Review'),
         showBackArrow: true,
       ),
       body: SingleChildScrollView(
@@ -34,8 +40,41 @@ class CheckoutScreen extends StatelessWidget {
               ),
 
               // Billing
+              CircularContainer(
+                  showBorder: true,
+                  borderColor: darkMode ? AppColors.dark : AppColors.light,
+                  child: Column(
+                    children: [
+                      // Pricing
+                      BillingAmountSection(),
+                      const SizedBox(
+                        height: AppSizes.spaceBtwItems,
+                      ),
+
+                      // Divider
+                      Divider(),
+                      const SizedBox(
+                        height: AppSizes.spaceBtwItems,
+                      ),
+
+                      // Payment methods
+                      BillingPayment(),
+                      const SizedBox(
+                        height: AppSizes.spaceBtwItems,
+                      ),
+
+                      // Address
+                    ],
+                  )),
             ],
           ),
+        ),
+      ),
+      bottomNavigationBar: Padding(
+        padding: const EdgeInsets.all(AppSizes.defaultSpace),
+        child: ElevatedButton(
+          onPressed: () => Get.to(() => const PaymentSuccessScreen()),
+          child: Text('Checkout ₹1000.00'),
         ),
       ),
     );

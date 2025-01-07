@@ -1,9 +1,11 @@
 import 'package:eshop/common/widgets/products/grid_layout.dart';
-import 'package:eshop/common/widgets/products/verticalProductCard.dart';
+import 'package:eshop/common/widgets/products/vertical_product_card.dart';
+import 'package:eshop/features/shop/all_products/all_products.dart';
 import 'package:eshop/features/shop/screens/home/widgets/promo_slider.dart';
 import 'package:eshop/utils/constants/img_strings.dart';
 import 'package:eshop/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import '../../../../common/widgets/custom_shapes/primary_header.dart';
 import '../../../../common/widgets/products/vertical_imgtxt.dart';
 import '../../../../common/widgets/search_bar.dart';
@@ -80,7 +82,7 @@ class HomeScreen extends StatelessWidget {
                   // Popular Products
                   SectionHeading(
                     titleTxt: 'Popular Products',
-                    onPressed: () {},
+                    onPressed: () => Get.to(() => const AllProductsScreen()),
                   ),
                   SizedBox(height: AppSizes.spaceBtwItems),
 
